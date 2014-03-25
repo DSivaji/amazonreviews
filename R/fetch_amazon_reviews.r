@@ -6,6 +6,8 @@
 #' @return data.frame containing the reviews with names
 #'   helpful_count, helpful_total, stars, title, date, description
 #' @export
+#' @updates
+#'   Current URL work for any product and don't show errors when there is no reviews for the product
 fetch_amazon_reviews <- function (id, page = 1) 
 {
   library(RCurl)
